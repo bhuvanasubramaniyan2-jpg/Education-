@@ -29,7 +29,7 @@ def get_response(message):
 
 @app.route("/")
 def home():
-    return render_template("index.html", bot_name=EDUCATION_BOT_NAME)
+    return render_template("templates/index.html", bot_name=EDUCATION_BOT_NAME)
 
 @app.route("/chat", methods=["POST"])
 def chat():
